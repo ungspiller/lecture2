@@ -6,8 +6,16 @@ public class RomanNumbers {
 
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
-        System.out.printf("%d in roman is %s", number, "I don't know");
+        System.out.printf("%d in roman is %s", number, toRoman(number));
 
 
+    }
+
+    public static String toRoman(int number){
+        String romanLiteral = "";
+        for (int i = 0; i < number; i++){
+            romanLiteral += "I";
+        }
+        return romanLiteral;
     }
 }
